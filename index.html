@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Internship Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Developer Internship Application</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="university">University/College</label>
+                <input type="text" id="university" name="university">
+            </div>
+
+            <div class="form-group">
+                <label for="degree">Degree/Major</label>
+                <input type="text" id="degree" name="degree">
+            </div>
+
+            <div class="form-group">
+                <label for="graduationYear">Expected Graduation Year</label>
+                <select id="graduationYear" name="graduationYear">
+                    <option value="">Select Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Technical Skills *</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="skills" value="HTML/CSS"> HTML/CSS</label>
+                    <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+                    <label><input type="checkbox" name="skills" value="React"> React</label>
+                    <label><input type="checkbox" name="skills" value="Node.js"> Node.js</label>
+                    <label><input type="checkbox" name="skills" value="Python"> Python</label>
+                    <label><input type="checkbox" name="skills" value="Git"> Git</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Previous Experience</label>
+                <textarea id="experience" name="experience" rows="4" placeholder="Describe any relevant projects, internships, or work experience..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="portfolio">Portfolio/GitHub URL</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/yourusername">
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Resume Upload</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+            </div>
+
+            <div class="form-group">
+                <label for="motivation">Why do you want this internship? *</label>
+                <textarea id="motivation" name="motivation" rows="4" required placeholder="Tell us about your motivation and career goals..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="availability">Availability *</label>
+                <select id="availability" name="availability" required>
+                    <option value="">Select Availability</option>
+                    <option value="full-time">Full-time (40 hours/week)</option>
+                    <option value="part-time">Part-time (20-30 hours/week)</option>
+                    <option value="flexible">Flexible schedule</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
